@@ -11,9 +11,9 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane1" prefHeight="613.0" prefWidth="726.0" stylesheets="@../CSS_Files/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.DoctorControll">
+<AnchorPane fx:id="pane1" prefHeight="613.0" prefWidth="726.0" stylesheets="@../CSS_Files/application.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PharmacistControll">
    <children>
-      <Label layoutX="61.0" layoutY="33.0" text="Doctor Registration" textFill="#474c50">
+      <Label layoutX="61.0" layoutY="33.0" text="Pharmacist Registration" textFill="#474c50">
          <font>
             <Font name="System Bold" size="30.0" />
          </font>
@@ -28,19 +28,19 @@
             <Font name="System Bold" />
         </font>
       </Label>
-      <TextField fx:id="docID" layoutX="61.0" layoutY="163.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter doctor number" />
+      <TextField fx:id="pharmacistID" layoutX="61.0" layoutY="163.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter pharmacist number" />
       <Label layoutX="61.0" layoutY="210.0" text="Full Name" textFill="#474c50">
          <font>
             <Font name="System Bold" />
          </font>
       </Label>
-      <TextField fx:id="doctorName" layoutX="61.0" layoutY="235.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter the full name" />
+      <TextField fx:id="pharmacistName" layoutX="61.0" layoutY="235.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter the full name" />
       <Label layoutX="61.0" layoutY="282.0" text="Email" textFill="#474c50">
          <font>
             <Font name="System Bold" />
          </font>
       </Label>
-      <TextField fx:id="doctorEmail" layoutX="61.0" layoutY="307.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter the email" />
+      <TextField fx:id="pharmacistEmail" layoutX="61.0" layoutY="307.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter the email" />
       <Label layoutX="61.0" layoutY="354.0" text="Date of birth" textFill="#474c50">
          <font>
             <Font name="System Bold" />
@@ -58,8 +58,8 @@
             <Font name="System Bold" />
          </font>
       </Label>
-      <RadioButton fx:id="dMale" layoutX="380.0" layoutY="385.0" mnemonicParsing="false" text="Male" />
-      <RadioButton fx:id="dFemale" layoutX="582.0" layoutY="385.0" mnemonicParsing="false" text="Female" />
+      <RadioButton fx:id="pharmacistMale" layoutX="380.0" layoutY="385.0" mnemonicParsing="false" text="Male" />
+      <RadioButton fx:id="pharmacistFemale" layoutX="582.0" layoutY="385.0" mnemonicParsing="false" text="Female" />
       <PasswordField fx:id="confirmPWD" layoutX="382.0" layoutY="235.0" prefHeight="34.0" prefWidth="282.0" promptText="Re-enter the password" />
       <Label layoutX="382.0" layoutY="210.0" text="Confirm Password" textFill="#474c50">
          <font>
@@ -76,13 +76,12 @@
             <Font name="System Bold" size="16.0" />
          </font>
       </JFXButton>
-      <Label layoutX="382.0" layoutY="282.0" text="Hospital" textFill="#474c50">
+      <Label layoutX="382.0" layoutY="282.0" text="Pharmacist License" textFill="#474c50">
          <font>
             <Font name="System Bold" />
          </font>
       </Label>
-      <TextField fx:id="hospital" layoutX="383.0" layoutY="307.0" prefHeight="34.0" prefWidth="282.0" promptText="Enter the hospital you works" />
-      <JFXButton fx:id="doctorreg" layoutX="452.0" layoutY="435.0" prefHeight="37.0" prefWidth="220.0" style="-fx-background-color: #248CE2;" text="Submit" textFill="WHITE">
+      <JFXButton fx:id="pharmacistreg" layoutX="452.0" layoutY="435.0" prefHeight="37.0" prefWidth="220.0" style="-fx-background-color: #248CE2;" text="Submit" textFill="WHITE">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
@@ -90,6 +89,16 @@
       <ImageView fx:id="back" fitHeight="18.0" fitWidth="27.0" layoutX="36.0" layoutY="47.0" onMouseClicked="#backword" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../Images/ARROW.png" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="fileupload" layoutX="381.0" layoutY="308.0" prefHeight="34.0" prefWidth="282.0" text="Upload your license here" textFill="#474c50">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="18.0" fitWidth="23.0" layoutX="613.0" layoutY="319.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/fileupload.png" />
          </image>
       </ImageView>
    </children>

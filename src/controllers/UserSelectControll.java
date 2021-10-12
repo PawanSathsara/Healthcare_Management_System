@@ -67,7 +67,19 @@ public class UserSelectControll {
 
     @FXML
     void RegPharmacist(MouseEvent event) {
-
+    	user3.getScene().getWindow().hide();
+    	Stage userselect = new Stage();
+    	try {
+			Parent root = FXMLLoader.load(getClass().getResource("/FXML_Files/Pharmacist.fxml"));
+			Scene scene = new Scene(root);
+			userselect.setResizable(false);
+			userselect.setScene(scene);
+			userselect.show();
+			
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
     @FXML
     void backword(MouseEvent event) {

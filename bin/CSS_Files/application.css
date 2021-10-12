@@ -6,7 +6,7 @@
 #ExPane{
 	-fx-background-color:#CCE8FF;
 }
-#btn,#editRequest,#patientreg,#doctorreg,#newpwd{
+#btn,#editRequest,#patientreg,#doctorreg,#newpwd,#pharmacistreg{
 	-fx-background-radius:200px;
 	-fx-background-color:#248CE2;
 	-fx-cursor: hand;
@@ -19,7 +19,7 @@
 	-fx-background-color:#248CE2;
 	-fx-cursor: hand;
 }
-TextField,PasswordField{
+TextField,PasswordField,#fileupload{
 	-fx-background-color:#ffffff;
 	-fx-border-radius:200px;
 	-fx-border-color:#D9D9D9;
