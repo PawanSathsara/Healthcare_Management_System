@@ -11,6 +11,11 @@
 	-fx-background-color:#248CE2;
 	-fx-cursor: hand;
 }
+.button{
+	-fx-background-radius:200px;
+	-fx-background-color:#248CE2;
+	-fx-cursor: hand;
+}
 #pane1{
 	-fx-background-color: #fff;
 }
@@ -68,4 +73,19 @@ TextField,PasswordField,#fileupload{
     -fx-border-color:#D9D9D9;
     -fx-border-radius:200px;
 }
-
+/*Table View */
+.table-view {
+    -fx-background-color:#FFFFFF;
+    -fx-border-radius:25;
+    -fx-border-color:#D9D9D9;
+} 
+.table-view .column-header-background{
+        -fx-background-color: #FFFFFF;
+        -fx-background-radius:25;
+        -fx-background-insets: 0 0 10 0;
+}
+.table-view .column-header{
+        -fx-size:50px;
+        -fx-border-width: 0 0 10 0;
+        -fx-background-color:transparent;
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane1" prefHeight="500.0" prefWidth="1000.0" stylesheets="@../CSS_Files/application.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16" fx:controller="controllers.Pharmacist1Controll">
+   <children>
+      <Label layoutX="61.0" layoutY="33.0" text="Pharmacist" textFill="#474c50">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="61.0" layoutY="79.0" text="Patients Prescriptions" textFill="#b8b8b8" />
+      <TableView layoutX="61.0" layoutY="113.0" prefHeight="223.0" prefWidth="881.0">
+        <columns>
+          <TableColumn prefWidth="90.4000244140625" text="Patient No" />
+          <TableColumn prefWidth="194.39996337890625" text="Patient Name" />
+            <TableColumn minWidth="0.0" prefWidth="136.00006103515625" text="Patient ID" />
+            <TableColumn prefWidth="168.00003051757812" text="Drug" />
+            <TableColumn prefWidth="293.5999755859375" text="Description" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="46.0" fitWidth="200.0" layoutX="61.0" layoutY="430.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/Logoo.png" />
+         </image>
+      </ImageView>
+      <JFXButton layoutX="723.0" layoutY="428.0" prefHeight="38.0" prefWidth="220.0" text="Done" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="723.0" layoutY="36.0" prefHeight="38.0" prefWidth="220.0" text="Account Settings" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

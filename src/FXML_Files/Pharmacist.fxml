@@ -71,11 +71,6 @@
             <Image url="@../Images/Logoo.png" />
          </image>
       </ImageView>
-      <JFXButton fx:id="editRequest" layoutX="452.0" layoutY="527.0" prefHeight="38.0" prefWidth="220.0" text="Request for edit" textFill="WHITE">
-         <font>
-            <Font name="System Bold" size="16.0" />
-         </font>
-      </JFXButton>
       <Label layoutX="382.0" layoutY="282.0" text="Pharmacist License" textFill="#474c50">
          <font>
             <Font name="System Bold" />
